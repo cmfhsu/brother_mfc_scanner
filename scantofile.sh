@@ -13,7 +13,7 @@ fi
 
 
 SCANIMAGE="/opt/brother/scanner/brscan-skey/skey-scanimage"
-OUTPUT=/mnt/media/media10tb/brscan/brscan_"$(date +%Y-%m-%d-%H-%M-%S)"
+OUTPUT=~/brscan/brscan_"$(date +%Y-%m-%d-%H-%M-%S)"
 OPT_OTHER=""
 
 
