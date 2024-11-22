@@ -1,7 +1,10 @@
 #! /bin/bash
 # scantofile
-#
-mkdir -p ~/brscan
+# Note: this script requires libtiff-tools
+
+# Base path to output dir (also used for temp files)
+BASE_PATH=~/brscan
+mkdir -p $BASE_PATH
 sleep 0.2
 
 if [ -e ~/.brscan-skey/scantofile.config ];then
@@ -13,7 +16,7 @@ fi
 
 
 SCANIMAGE="/opt/brother/scanner/brscan-skey/skey-scanimage"
-OUTPUT=~/brscan/brscan_"$(date +%Y-%m-%d-%H-%M-%S)"
+OUTPUT=$BASE_PATH/brscan_"$(date +%Y-%m-%d-%H-%M-%S)"
 OPT_OTHER=""
 
 
